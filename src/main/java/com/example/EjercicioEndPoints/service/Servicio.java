@@ -8,31 +8,31 @@ import java.util.*;
 @Service
 public class Servicio {
 
-    private static final Map<Long, Proyecto> proyectoStore = new HashMap<>();
+    private static final Map<Long, Proyecto> proyecto = new HashMap<>();
     private static Long idCounter = 1L;  
 
     
     public List<Proyecto> getAllProjects() {
-        return new ArrayList<>(proyectoStore.values()); 
+        return new ArrayList<>(proyecto.values()); 
     }
 
     
     public Proyecto getProjectById(Long id) {
-        return proyectoStore.get(id); 
+        return proyecto.get(id); 
     }
 
     
     public Proyecto createProject(Proyecto project) {
         project.setId(idCounter++); 
-        proyectoStore.put((long) project.getId(), project); 
+        proyecto.put((long) project.getId(), project); 
         return project;
     }
 
     
     public Proyecto updateProject(Long id, Proyecto project) {
-        if (proyectoStore.containsKey(id)) {
+        if (proyecto.containsKey(id)) {
             project.setId(id); 
-            proyectoStore.put(id, project); 
+            proyecto.put(id, project); 
             return project;
         }
         return null; 
@@ -40,7 +40,7 @@ public class Servicio {
 
     
     public void deleteProject(Long id) {
-        proyectoStore.remove(id); 
+    	proyecto.remove(id); 
     }
     
     
