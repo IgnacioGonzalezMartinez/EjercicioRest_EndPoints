@@ -10,7 +10,7 @@ public class Proyecto {
     public Proyecto() {}
 
 
-    public Proyecto(int id, String description, String language, boolean open) {
+    public Proyecto(long id, String description, String language, boolean open) {
         this.id = (long) id;
         this.description = description;
         this.language = language;
