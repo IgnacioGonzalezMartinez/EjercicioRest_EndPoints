@@ -6,10 +6,10 @@ public class Article {
     private String abstractText;
     private String content;
 
-    // Constructor vacío
+    
     public Article() {}
 
-    // Constructor con parámetros
+    
     public Article(int id, String title, String abstractText, String content) {
         this.id = id;
         this.title = title;
@@ -17,7 +17,7 @@ public class Article {
         this.content = content;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -50,7 +50,7 @@ public class Article {
         this.content = content;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Article{" +

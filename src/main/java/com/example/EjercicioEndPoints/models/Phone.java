@@ -5,17 +5,17 @@ public class Phone {
     private String value;
     private String type;
 
-    // Constructor vacío
+    
     public Phone() {}
 
-    // Constructor con parámetros
+    
     public Phone(int id, String value, String type) {
         this.id = id;
         this.value = value;
         this.type = type;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -40,7 +40,7 @@ public class Phone {
         this.type = type;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Phone{" +

@@ -5,17 +5,17 @@ public class Code {
     private String idPackage;
     private String file;
 
-    // Constructor vacío
+    
     public Code() {}
 
-    // Constructor con parámetros
+    
     public Code(int id, String idPackage, String file) {
         this.id = id;
         this.idPackage = idPackage;
         this.file = file;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -40,7 +40,7 @@ public class Code {
         this.file = file;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Code{" +

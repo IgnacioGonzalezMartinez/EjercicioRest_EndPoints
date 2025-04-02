@@ -7,17 +7,17 @@ public class Tag {
     private String label;
     private LocalDate date;
 
-    // Constructor vacío
+    
     public Tag() {}
 
-    // Constructor con parámetros
+    
     public Tag(int id, String label, LocalDate date) {
         this.id = id;
         this.label = label;
         this.date = date;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -42,7 +42,7 @@ public class Tag {
         this.date = date;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Tag{" +

@@ -10,10 +10,10 @@ public class Details {
     private String type;
     private BigDecimal budget;
 
-    // Constructor vacío
+    
     public Details() {}
 
-    // Constructor con parámetros
+    
     public Details(int id, LocalDate date, String content, String type, BigDecimal budget) {
         this.id = id;
         this.date = date;
@@ -22,7 +22,7 @@ public class Details {
         this.budget = budget;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -63,7 +63,7 @@ public class Details {
         this.budget = budget;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Detail{" +

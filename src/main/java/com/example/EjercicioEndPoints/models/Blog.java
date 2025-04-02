@@ -7,17 +7,17 @@ public class Blog {
     private String title;
     private LocalDate date;
 
-    // Constructor vacío
+    
     public Blog() {}
 
-    // Constructor con parámetros
+    
     public Blog(int id, String title, LocalDate date) {
         this.id = id;
         this.title = title;
         this.date = date;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -42,7 +42,7 @@ public class Blog {
         this.date = date;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "Blog{" +

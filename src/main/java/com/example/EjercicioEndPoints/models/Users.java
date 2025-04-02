@@ -5,17 +5,17 @@ public class Users {
     private String nick;
     private String name;
 
-    // Constructor vacío
+    
     public Users() {}
 
-    // Constructor con parámetros
+    
     public Users(int id, String nick, String name) {
         this.id = id;
         this.nick = nick;
         this.name = name;
     }
 
-    // Getters y Setters
+    
     public int getId() {
         return id;
     }
@@ -40,7 +40,7 @@ public class Users {
         this.name = name;
     }
 
-    // Método toString()
+    
     @Override
     public String toString() {
         return "User{" +
