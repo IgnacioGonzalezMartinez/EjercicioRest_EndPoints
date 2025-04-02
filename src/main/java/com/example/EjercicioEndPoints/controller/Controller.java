@@ -12,39 +12,39 @@ import java.util.*;
 @RequestMapping("/projects")
 public class Controller {
 
-    private final Servicio projectService;
+    private final Servicio servicio;
 
-    public Controller(Servicio projectService) {
-        this.projectService = projectService;
+    public Controller(Servicio servicio) {
+        this.servicio = servicio;
     }
 
     
     @GetMapping
     public List<Proyecto> getAllProjects() {
-        return projectService.getAllProjects();
+        return servicio.getAllProjects();
     }
 
     
     @GetMapping("/{id}")
     public Proyecto getProjectById(@PathVariable Long id) {
-        return projectService.getProjectById(id);
+        return servicio.getProjectById(id);
     }
 
     
     @PostMapping
     public Proyecto createProject(@RequestBody Proyecto project) {
-        return projectService.createProject(project);
+        return servicio.createProject(project);
     }
 
     
     @PutMapping("/{id}")
     public Proyecto updateProject(@PathVariable Long id, @RequestBody Proyecto project) {
-        return projectService.updateProject(id, project);
+        return servicio.updateProject(id, project);
     }
 
     
     @DeleteMapping("/{id}")
     public void deleteProject(@PathVariable Long id) {
-        projectService.deleteProject(id);
+    	servicio.deleteProject(id);
     }
 }
